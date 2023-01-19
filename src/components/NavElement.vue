@@ -25,7 +25,9 @@
                 {{ navEl.title.toUpperCase() }}
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" >{{ navEl.dropdownItems[0] }}</a></li><!-- TODO TO FIX THIS, IS JUST AN EXAMPLE-->
+                <li  v-for="item in navEl.dropdownItems">
+                    <a class="dropdown-item" href="#">{{ item }}</a>
+                </li>
             </ul>
             
             </li>
@@ -45,12 +47,11 @@
     }
     button{
         background-color: $button-nav-bg;
-        border: 0;
-        padding: 0 1.5rem;
+        @include button-style;
 
         a{
             text-decoration: none;
-            color: $text-color;
+            color: $text-color-primary;
             text-transform: uppercase;
         }
     }

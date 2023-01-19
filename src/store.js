@@ -10,7 +10,7 @@ export const store = reactive({
             title : 'about',
             dropdownItems:['item1', 'item2', 'item3']
         },
-        {
+        { 
             title : 'service',
             dropdownItems:['item1', 'item2', 'item3']
         },
@@ -20,7 +20,7 @@ export const store = reactive({
         },
         {
             title : 'articles',
-            dropdownItems:['item1', 'item2', 'item3']
+            dropdownItems:['item1', 'item2', 'item5']
         },
     ]
 })

@@ -1,6 +1,26 @@
+//BACKGROUND COLORS
 $button-nav-bg: #f9d03f;
-$jumbo-bg-color: #fed03d;
-$text-color: #6b6868;
+$jumbo-bg-color: #fed23f;
+$button-bg-color: #333333;
+
+//TEXT COLORS
+$text-color-primary: #6b6868;
+$text-color-secondary: #1e1e1e;
+$text-color-white: #ffffff;
+$jubo-text-color: #fed23f;
 
 
+//MIXIN 
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+@mixin button-style{
+    text-transform: uppercase;
+    font-size: .9rem;
+    border: 0;
+    padding: .4rem 2.5rem;
+}
