@@ -1,10 +1,12 @@
 <script>
     import { store } from '../store';
     import CardElement from './CardElement.vue'
+    import MainJumbo from './MainJumbo.vue';
     export default {
         name : 'AppMain',
         components:{
             CardElement,
+            MainJumbo,
         },
 
         data() {
@@ -25,6 +27,7 @@
     <div class="cards-wrapper container-custom">
         <CardElement v-for="card in store.workChain" :cardEl="card" />
     </div>
+    <MainJumbo />
 </template>
 
 <style lang="scss" scoped>

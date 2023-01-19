@@ -45,5 +45,28 @@ export const store = reactive({
             title : 'Exclusive',
             description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda ratione consequatur'
          },
-    ]
+    ],
+
+    statsCompany:[
+        {
+            icon : 'fa-solid fa-suitcase',
+            number : '3534',
+            description : 'planning applications'
+        },
+        {
+            icon : 'fa-regular fa-building',
+            number : '896',
+            description : 'completed projects'
+        },
+        {
+            icon : 'fa-solid fa-users',
+            number : '172',
+            description : 'trained professional'
+        },
+        {
+            icon : 'fa-solid fa-globe',
+            number : '19',
+            description : 'international offices'
+        },
+    ],
 })
