@@ -27,7 +27,18 @@
     <div class="cards-wrapper container-custom">
         <CardElement v-for="card in store.workChain" :cardEl="card" />
     </div>
+    
     <MainJumbo />
+
+    <div class="cards-preview text-center">
+        <h3>Explore Recent Work</h3>
+        <span></span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, beatae repellat. Sit maxime quasi consequatur? Placeat assumenda ratione consequatur</p>
+    </div>
+
+    <div class="recent-img">
+        <img v-for="img in store.imgRecentWork" :src="`/src/assets/img/${img}`" alt="">
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -61,5 +72,15 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 4rem;
+    }
+
+    .recent-img{
+        @include flex-center;
+
+        img{
+            margin: 0 .5rem;
+            width: 250px;
+            height: 250px;
+        }
     }
 </style>

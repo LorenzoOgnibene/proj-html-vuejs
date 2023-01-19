@@ -69,4 +69,6 @@ export const store = reactive({
             description : 'international offices'
         },
     ],
+
+    imgRecentWork:['project2-featured-15013609-200x200.jpg', 'project1-featured-294276386-200x200.jpg', 'project3-featured-189023420-200x200.jpg']
 })
