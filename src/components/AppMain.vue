@@ -1,17 +1,26 @@
 <script>
+    
     import { store } from '../store';
-    import CardElement from './CardElement.vue'
+    import CardElement from './CardElement.vue';
     import MainJumbo from './MainJumbo.vue';
+    import PaintfulCard from './PaintfulCard.vue';
+    
     export default {
         name : 'AppMain',
         components:{
             CardElement,
             MainJumbo,
+            PaintfulCard,
         },
 
         data() {
             return {
                 store,
+            }
+        },
+        methods: {
+            getImgPath(imgPath){
+                return new URL(`../assets/img/${imgPath}`, import.meta.url).href;
             }
         },
 
@@ -27,7 +36,7 @@
     <div class="cards-wrapper container-custom">
         <CardElement v-for="card in store.workChain" :cardEl="card" />
     </div>
-    
+
     <MainJumbo />
 
     <div class="cards-preview text-center">
@@ -36,9 +45,28 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, beatae repellat. Sit maxime quasi consequatur? Placeat assumenda ratione consequatur</p>
     </div>
 
-    <div class="recent-img">
-        <img v-for="img in store.imgRecentWork" :src="`/src/assets/img/${img}`" alt="">
-    </div>
+    <section class="recent-work container-custom">
+        <div class="recent-img">
+            <img v-for="img in store.imgRecentWork" :src="getImgPath(img)" alt="" >
+        </div>
+        <div class="accordion-element">
+            <span class="horizontal-line"></span>
+            <h6>View all Projects</h6>
+            <span class="horizontal-line"></span>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="cards-preview text-center">
+            <h3>Our Core Values</h3>
+            <span></span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, beatae repellat. Sit maxime quasi consequatur? Placeat assumenda ratione consequatur</p>
+        </div>
+        <div class="cards-wrapper container-custom">
+            <PaintfulCard v-for="cardItem in store.ourCoreValues"  :cardIt="cardItem"/>
+        </div>
+    </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -55,11 +83,7 @@
             margin-bottom: 1.2rem;
         }
         span{
-            display: inline-block;
-            width: 170px;
-            height: 2px;
-            background-color: $jumbo-bg-color;
-            margin-bottom: 1.5rem;
+            @include horizontal-line-yhellow;
         }
 
         p{
@@ -76,11 +100,38 @@
 
     .recent-img{
         @include flex-center;
-
+        margin-bottom: 3rem;
+        
         img{
             margin: 0 .5rem;
             width: 250px;
             height: 250px;
         }
+    }
+
+    .accordion-element{
+        @include flex-center;
+        margin-bottom: 4rem;
+        h6{
+            padding: 0 5rem;
+            color: $text-color-secondary;
+            text-transform: uppercase;
+            font-size: .8rem;
+            opacity: 60%;
+        }
+        span{
+            display: inline-block;
+            width: 255px;
+            height: 1px;
+            background-color: $text-color-primary;
+            opacity: 30%;
+            
+        }
+    }
+
+    .values{
+        width: 100%;
+        height: 600px;
+        background-color: $second-jumbo-bg;
     }
 </style>

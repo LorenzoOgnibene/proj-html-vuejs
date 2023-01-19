@@ -27,9 +27,7 @@
         padding: 1rem 0;
         
         .card-body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center;
         }
 
         h5{

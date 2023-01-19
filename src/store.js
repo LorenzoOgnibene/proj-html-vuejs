@@ -70,5 +70,32 @@ export const store = reactive({
         },
     ],
 
-    imgRecentWork:['project2-featured-15013609-200x200.jpg', 'project1-featured-294276386-200x200.jpg', 'project3-featured-189023420-200x200.jpg']
+    imgRecentWork:['project2-featured-15013609-200x200.jpg', 'project1-featured-294276386-200x200.jpg', 'project3-featured-189023420-200x200.jpg'],
+
+    ourCoreValues:[
+        {
+            icon : 'fa-solid fa-house-chimney',
+            color : 'acqua',
+            title : 'Great Services',
+            description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda elit'
+        },
+        {
+            icon : 'fa-solid fa-gear',
+            color : 'blue',
+            title : 'Highest Standards',
+            description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda elit'
+        },
+        {
+            icon : 'fa-solid fa-users',
+            color : 'orange',
+            title : 'Professional Team',
+            description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda elit'
+        },
+        {
+            icon : 'fa-solid fa-lightbulb',
+            color : 'green',
+            title : 'Creative Solutions',
+            description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda elit'
+        },
+    ]
 })
