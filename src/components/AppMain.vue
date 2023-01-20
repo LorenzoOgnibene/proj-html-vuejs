@@ -4,6 +4,7 @@
     import CardElement from './CardElement.vue';
     import MainJumbo from './MainJumbo.vue';
     import PaintfulCard from './PaintfulCard.vue';
+    import MainJumboSlider from './MainJumboSlider.vue';
     
     export default {
         name : 'AppMain',
@@ -11,6 +12,7 @@
             CardElement,
             MainJumbo,
             PaintfulCard,
+            MainJumboSlider,
         },
 
         data() {
@@ -65,11 +67,13 @@
         <div class="cards-wrapper container-custom">
             <PaintfulCard v-for="cardItem in store.ourCoreValues"  :cardIt="cardItem"/>
         </div>
+
+        <MainJumboSlider />
     </section>
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @use '../style/partials/variables' as*;
     @use '../style/general.scss' as*;
     .cards-preview{
@@ -95,7 +99,7 @@
     .cards-wrapper{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 4rem;
+        padding-bottom: 4rem
     }
 
     .recent-img{
@@ -131,7 +135,6 @@
 
     .values{
         width: 100%;
-        height: 600px;
         background-color: $second-jumbo-bg;
     }
 </style>

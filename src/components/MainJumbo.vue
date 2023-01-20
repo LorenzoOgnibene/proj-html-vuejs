@@ -34,7 +34,7 @@
         background-size: cover;
         height: 500px;
         width: 100%;
-        border-top: solid 20px white;
+       
         position: relative;
         .top-wave{
             width: 100%;
@@ -42,7 +42,7 @@
             border-radius: 70%;
             background-color: white;
             position: absolute;
-            bottom: 414px;
+            bottom: 433px;
         }
 
         .bottom-wave{
@@ -51,7 +51,7 @@
             border-radius: 70%;
             background-color: white;
             position: absolute;
-            top: 414px;
+            top: 436px;
         }
 
         .content{

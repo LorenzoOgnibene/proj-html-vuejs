@@ -70,7 +70,11 @@ export const store = reactive({
         },
     ],
 
-    imgRecentWork:['project2-featured-15013609-200x200.jpg', 'project1-featured-294276386-200x200.jpg', 'project3-featured-189023420-200x200.jpg'],
+    imgRecentWork:[
+        'project2-featured-15013609-200x200.jpg', 
+        'project1-featured-294276386-200x200.jpg', 
+        'project3-featured-189023420-200x200.jpg'
+    ],
 
     ourCoreValues:[
         {
@@ -96,6 +100,19 @@ export const store = reactive({
             color : 'green',
             title : 'Creative Solutions',
             description : 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat assumenda elit'
+        },
+    ],
+
+    testimonials: [
+        {
+            img : 'home-testimonial-113165296.jpg',
+            description : '"No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property."',
+
+        },
+        {
+            img : 'home-testimonial-84268399.jpg',
+            description : '"Be who you are and say what you feel, because those who mind don\'t matter and those who matter don\' t mind."',
+
         },
     ]
 })
