@@ -33,9 +33,9 @@
             }
         },
 
-        // mounted() {
-        //     this.autoPlay()
-        // },
+        mounted() {
+            this.autoPlay()
+        },
     }
 </script>
 
