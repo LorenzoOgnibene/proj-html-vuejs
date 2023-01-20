@@ -85,6 +85,17 @@
                     line-height: 2;
                     padding: 1.5rem .8rem;
                 }
+                button{
+                    a{
+                        text-decoration: none
+                    }
+                    &:hover{
+                        background-color: $button-bg-color;
+                        a{
+                            color: $text-color-white
+                        }
+                    }
+                }
             }
             .learn-btn{
                 @include button-style;

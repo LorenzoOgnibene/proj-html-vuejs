@@ -15,7 +15,7 @@
     </div>
     <div class="emphasis-bar text-center">
         <h3>Do You Have A Construction Project We Can Help With?</h3>
-        <button class="dark-btn"><a href="#">Get a free quote</a></button>
+        <button id="second-button" class="dark-btn"><a href="#">Get a free quote</a></button>
     </div>
 </template>
 
@@ -53,8 +53,15 @@
     }
     .get-btn{
         background-color: $button-nav-bg;
+        &:hover{
+            background-color: $button-bg-color;
+            a{
+                color: $text-color-white;
+            }
+        }
         a{
             color: $text-color-primary;
+        
         }
         }
 
@@ -77,8 +84,22 @@
     }
     .dark-btn{
         background-color: $button-bg-color;
+        &:hover{
+            background-color: $button-nav-bg;
+            a{
+                color: $text-color-primary
+            }
+        }
         a{
             color: $text-color-white;
+        }
+    }
+
+    #second-button:hover{
+        background-color: white;
+        border: 1px solid black;
+        a{
+            color: black;
         }
     }
     </style>    

@@ -249,6 +249,12 @@
                     a{
                         color: $text-color-primary;
                     }
+                    &:hover{
+                        background-color: $button-bg-color;
+                        a{
+                            color: $text-color-white;
+                        }
+                    }
                 }
 
                 p{

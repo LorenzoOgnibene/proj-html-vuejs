@@ -44,6 +44,9 @@
         img{
             width: 80%;
         }
+        .nav-link:hover{
+            color: $button-nav-bg;
+        }
     }
     button{
         background-color: $button-nav-bg;
@@ -53,6 +56,13 @@
             text-decoration: none;
             color: $text-color-primary;
             text-transform: uppercase;
+        }
+
+        &:hover{
+            background-color: $button-bg-color;
+            a{
+                color: $text-color-white;
+            }
         }
     }
 </style>

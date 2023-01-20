@@ -21,6 +21,7 @@
 <style lang="scss" scoped>
     @use '../style/partials/variables' as*;
     @import "@fortawesome/fontawesome-free/css/all.css";
+   
     .card{
         background-color: $cards-bg-color;
         border: 0;
