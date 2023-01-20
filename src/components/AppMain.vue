@@ -5,6 +5,7 @@
     import MainJumbo from './MainJumbo.vue';
     import PaintfulCard from './PaintfulCard.vue';
     import MainJumboSlider from './MainJumboSlider.vue';
+    import CardNews from './CardNews.vue';
     
     export default {
         name : 'AppMain',
@@ -13,6 +14,7 @@
             MainJumbo,
             PaintfulCard,
             MainJumboSlider,
+            CardNews,
         },
 
         data() {
@@ -69,6 +71,22 @@
         </div>
 
         <MainJumboSlider />
+    </section>
+
+    <section class="news">
+        <div class="cards-preview text-center">
+            <h3>Latest News</h3>
+            <span></span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, beatae repellat. Sit maxime quasi consequatur? Placeat assumenda ratione consequatur</p>
+        </div>
+        <div class="news-cards container-custom">
+            <CardNews v-for="article in store.latestNews" :articleEl="article" />
+        </div>
+        <div class="accordion-element">
+            <span class="horizontal-line"></span>
+            <h6>View all articles</h6>
+            <span class="horizontal-line"></span>
+        </div>
     </section>
 
 </template>
@@ -136,5 +154,27 @@
     .values{
         width: 100%;
         background-color: $second-jumbo-bg;
+    }
+
+    .news{
+        background-color: $second-jumbo-bg;
+        padding-bottom: 2.5rem;
+        .news-cards{
+            @include flex-center;
+            padding-bottom: 3rem;
+        }
+
+        .accordion-element{
+            h6{
+                padding: 0 6.5rem;
+            }
+
+            span{
+                height: 2px;
+                width: 280px;
+                background-color: $text-color-white;
+                opacity: 100%;
+            }
+        }
     }
 </style>
