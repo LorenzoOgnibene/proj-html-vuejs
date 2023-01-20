@@ -135,5 +135,13 @@ export const store = reactive({
             date : 'December 6th 2015',
             description : 'Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed'
         },
+    ],
+
+    partners:[
+        'home-logo11-219096700-320x202.png',
+        'home-logo10-219096700-320x202.png',
+        'home-logo2-219096700-320x202.png',
+        'home-logo1-219096700-320x202.png',
+        'home-logo9-219096700-320x202.png'
     ]
 })

@@ -20,7 +20,7 @@
     @use '../style/partials/variables' as*;
     @import "@fortawesome/fontawesome-free/css/all.css";
     .card-wrapper{
-        padding: 0 2rem;
+        padding: 0 1rem;
         @include flex-column-center;
 
         span{

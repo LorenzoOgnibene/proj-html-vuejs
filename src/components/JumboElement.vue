@@ -52,14 +52,14 @@
         
     }
     .get-btn{
-        background-color: $jumbo-bg-color;
+        background-color: $button-nav-bg;
         a{
             color: $text-color-primary;
         }
         }
 
     .emphasis-bar{
-        background-color: $jumbo-bg-color;
+        background-color: $button-nav-bg;
         position: relative;
         h3{
             padding: 2.5rem 0;
